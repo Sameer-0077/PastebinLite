@@ -4,6 +4,7 @@ import express from "express";
 import cors from "cors";
 import helthzRoutes from "./routes/helthz.js";
 import pastesRoutes from "./routes/pastes.js";
+import pastesPage from "./routes/pastePage.js";
 
 const app = express();
 
@@ -12,6 +13,7 @@ app.use(express.json());
 
 app.use("/api", helthzRoutes);
 app.use("/api", pastesRoutes);
+app.use("/", pastesPage);
 
 app.get("/", (req, res) => {
   res.send("Pastebine app is running now!");
