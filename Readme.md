@@ -12,13 +12,14 @@ This project is built as part of a take-home assignment and is designed to be te
 Backend deployed on **Render**:
 
 ```
-https://<your-render-app-name>.onrender.com
+https://pastebinlite-wdmy.onrender.com
 ```
 
 Example endpoints:
 
 - Health check: `/api/healthz`
 - Create paste: `/api/pastes`
+- Fetch paste: `/api/pastes/:id`
 - View paste (HTML): `/p/:id`
 
 ---
@@ -200,7 +201,7 @@ npm run dev
 Server runs at:
 
 ```
-http://localhost:5000
+http://localhost:8000
 ```
 
 ---
